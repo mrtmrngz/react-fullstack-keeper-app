@@ -52,8 +52,7 @@ export const login_control = async (req, res) => {
         res.cookie('jwt', jwtToken, {
             httpOnly: true,
             secure: true,
-            sameSite: 'lax',
-            domain: process.env.SERVER_URL,  //!OPEN PRODUCTION
+            sameSite: 'None',
             maxAge: 1000 * 60 * 60 * 24 * 7
         }).status(200).json({message: "Login successful"})
 
