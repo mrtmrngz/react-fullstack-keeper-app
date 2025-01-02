@@ -28,7 +28,7 @@ const ReadNote = () => {
                         </div>
                     )}
                     <div>
-                        <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(note.description)}}></p>
+                        <p dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(note?.description || "")}}></p>
                     </div>
                 </div>
             </Container>

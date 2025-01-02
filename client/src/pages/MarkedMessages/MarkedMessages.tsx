@@ -9,6 +9,7 @@ import {RootState} from "../../redux/store.ts";
 
 const MarkedMessages = () => {
 
+    // @ts-ignore
     const {data, isFetching, isLoading} = useGetMarkedNotesQuery()
 
     const {markedNotes} = useSelector((state: RootState) => state.notes)

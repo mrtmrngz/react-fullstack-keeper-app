@@ -36,7 +36,6 @@ export interface AddNoteModalProps {
 
 export interface UpdateNoteModalProps extends AddNoteModalProps {
     editingRow: NoteTypesWithId | null
-    setEditingRow: () => void
 }
 
 export interface GetNoteTypes extends NoteTypesWithId{

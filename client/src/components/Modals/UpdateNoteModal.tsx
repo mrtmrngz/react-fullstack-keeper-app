@@ -8,7 +8,7 @@ import {useDispatch} from "react-redux";
 import {setUpdateNote} from "../../redux/noteSlice.ts";
 
 
-const UpdateNoteModal = ({onClose, onOpen, modalRef, editingRow, setEditingRow}: UpdateNoteModalProps) => {
+const UpdateNoteModal = ({onClose, onOpen, modalRef, editingRow}: UpdateNoteModalProps) => {
 
     const [updateNote] = useUpdateNoteMutation()
     const dispatch = useDispatch()

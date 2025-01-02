@@ -16,7 +16,7 @@ export const noteService = createApi({
                body: body
            })
         }),
-        getNotes: builder.query({
+        getNotes: builder.query<any, void>({
             query: () => "/",
             async onQueryStarted(_, {dispatch, queryFulfilled}) {
                 try {
@@ -30,7 +30,7 @@ export const noteService = createApi({
         getCounts: builder.query({
            query: () => "/note-counts"
         }),
-        getMarkedNotes: builder.query({
+        getMarkedNotes: builder.query<any, void>({
             query: () => "/marked-notes",
             async onQueryStarted(_, {dispatch, queryFulfilled}) {
                 try {

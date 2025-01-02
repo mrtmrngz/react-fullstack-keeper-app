@@ -17,6 +17,7 @@ const Home = () => {
     const [isModalInvalid, setIsModalInvalid] = useState<boolean>(false)
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
     const modalRef = useRef(null)
+    // @ts-ignore
     const {data, isLoading, isFetching} = useGetNotesQuery()
     const {notes} = useSelector((state: RootState) => state.notes)
     const {searchState} = useSelector((state: RootState) => state.search)

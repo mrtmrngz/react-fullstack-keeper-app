@@ -52,7 +52,7 @@ const NoteList = ({notes}: NoteListProps) => {
             </div>
 
             {isModalInvalid &&
-                <UpdateNoteModal editingRow={editingRow} setEditingRow={setEditingRow} onOpen={isModalOpen}
+                <UpdateNoteModal editingRow={editingRow} onOpen={isModalOpen}
                                  onClose={() => setIsModalOpen(false)} modalRef={modalRef}/>}
         </>
     );
