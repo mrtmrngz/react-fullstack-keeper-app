@@ -2,7 +2,6 @@ import {FormikHelpers} from "formik";
 import {UserLoginProps} from "../../../types.ts";
 import AuthForm from "../../../components/Forms/AuthForm/AuthForm.tsx";
 import {useState} from "react";
-import {useNavigate} from "react-router";
 import {useLoginMutation} from "../../../services/authService.ts";
 import {toast} from "react-toastify";
 
@@ -17,7 +16,6 @@ const Login = () => {
 
     const [login, {isLoading}] = useLoginMutation()
     const [error, setError] = useState<ErrorTypes | null>(null)
-    const navigate = useNavigate()
 
     const initialValues: UserLoginProps = {
         email: "",
@@ -30,7 +28,7 @@ const Login = () => {
             const res = await login(values).unwrap()
             if(res) {
                 toast.success(res.message)
-                navigate("/")
+                window.location.href = "/"
             }
         }catch (err: any) {
             setError(err)
