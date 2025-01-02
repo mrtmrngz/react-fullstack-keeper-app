@@ -1,0 +1,10 @@
+.home-page {
+    padding-bottom: 30px;
+}
+
+.add-note-btn-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}

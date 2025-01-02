@@ -1,0 +1,63 @@
+.modal-wrapper {
+    background: white;
+    z-index: 12 !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    max-width: 30rem;
+    max-height: 50rem;
+    overflow-y: auto;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    @media screen and (min-width: 640px) {
+        max-width: 40rem;
+        max-height: 60rem;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 55rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 65rem;
+        max-height: 65rem;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 70rem;
+    }
+}
+
+.modal-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.close-modal-btn {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease all;
+
+    &:hover {
+        background: var(--border-color);
+    }
+
+    svg {
+        width: 2.2rem;
+    }
+}
+
+.modal-title {
+    font-size: 2rem;
+}
+

@@ -1,0 +1,29 @@
+.update-profile-page {
+    padding-bottom: 3rem;
+}
+
+.update-profile-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.update-profile-form-wrapper {
+    max-width: 70rem;
+    width: 100%;
+    padding: 2rem;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+}
+
+.update-profile-error-message {
+    text-align: center;
+    margin: 4rem 0;
+    color: var(--accent-color);
+    font-weight: 400;
+}

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #AFD0BF;
+  --secondary-color: #D0AFC0;
+  --bg-color: #ECECEC;
+  --accent-color: #DC4141;
+  --text-color: #1F2937;
+  --darken-bg-color: #d4cfcf;
+  --border-color: #dee0ea;
+}
+
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  line-height: 1.2;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: max-content;
+  background: none;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  outline: none;
+  border: 1px solid var(--border-color);
+  padding: .8rem .8rem .8rem 1rem;
+  font-size: 1.6rem;
+
+  &:focus {
+    outline: none;
+    border-color: rgba(0,0,0,0.4);
+  }
+}
+
+main {
+  margin-top: 30px;
+}
+
+.font-openSans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  padding: 0 17px;
+  transition: all .3s ease;
+  border: 1px solid transparent;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: no-drop;
+  }
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  &:hover {
+    background: var(--secondary-color);
+  }
+}
+
+.btn-danger {
+  background: var(--accent-color);
+  color: white;
+  &:hover {
+    background: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+
+.btn-link {
+  background: none;
+  color: #005CE6;
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+  &:hover {
+    background: var(--primary-color);
+  }
+}
+
+.btn-small {
+  height: 35px;
+}
+
+.btn-medium {
+  height: 40px;
+}
+
+.btn-large {
+  height: 45px;
+}
+
+.container {
+  padding: 0 5%;
+  margin: 0 auto;
+  width: 100%;
+
+  @media screen and (min-width: 640px) {
+    padding: 0 3%;
+    max-width: 640px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
+
+  @media screen and (min-width: 1536px) {
+    max-width: 1536px;
+  }
+}
+
+.backdrop {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: none;
+
+  &.open {
+    display: block;
+  }
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.empty-array-warning {
+  margin-top: 5rem;
+  color: var(--accent-color);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.spinner-wrapper {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  & > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.button-right-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.quill {
+  width: 100%;
+}
+
+.quill > .ql-container > .ql-editor {
+  height: 20rem !important;
+}

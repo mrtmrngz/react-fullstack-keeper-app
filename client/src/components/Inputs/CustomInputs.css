@@ -1,0 +1,50 @@
+.custom-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+
+    label {
+        text-transform: capitalize;
+        font-size: 1.4rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        column-gap: .4rem;
+
+        span {
+            color: red;
+        }
+    }
+}
+
+.custom-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: .7rem;
+
+    .checkbox-btn {
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--border-color);
+
+        svg {
+            fill: #ffffff;
+        }
+    }
+
+    label {
+        user-select: none;
+    }
+
+    &.checked .checkbox-btn {
+        background: #007FFF;
+    }
+}
+
+.custom-input-error {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+}
