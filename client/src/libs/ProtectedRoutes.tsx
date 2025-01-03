@@ -9,7 +9,13 @@ import Loader from "../components/UI/Loader.tsx";
 const ProtectedRoutes = () => {
     const {user} = useSelector((state: RootState) => state.auth)
     const dispatch: AppDispatch = useDispatch()
-    const {data, isLoading, isFetching, isError} = useGetUserInfoQuery(null, {skip: !!user})
+    const {data, isLoading, isFetching, isError, refetch} = useGetUserInfoQuery(null, {skip: !!user})
+
+    useEffect(() => {
+        if(!user) {
+            refetch()
+        }
+    }, [user, refetch])
 
     useEffect(() => {
         if(data && !user) {
