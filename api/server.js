@@ -8,14 +8,14 @@ import mainRoutes from './routes/index.js'
 const app = express()
 const PORT = process.env.PORT || 8080
 
-dotenv.config()
+app.use(express.json())
+app.use(cookieParser())
 app.use(cors({
     origin: process.env.CLIENT_URL,
     credentials: true
 }))
-app.use(cookieParser())
+dotenv.config()
 app.use(logger('dev'))
-app.use(express.json())
 
 //! router
 
