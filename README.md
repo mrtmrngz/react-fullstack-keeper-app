@@ -24,22 +24,22 @@ I used `JSON WEB TOKEN` and `COOKIES` for authentication and DID NOT save token 
 
 ### *Auth Page* <br>
 ![Website Screenshot](https://i.imgur.com/XauXycZ.png) <br><br>
-*Home Page* <br>
+### *Home Page* <br>
 ![Website Screenshot](https://i.imgur.com/9MD6lvJ.png) <br><br>
-*Add Note Modal* <br>
+### *Add Note Modal* <br>
 ![Website Screenshot](https://i.imgur.com/fAYAmGF.png) <br><br>
-*Update Note Modal* <br>
+### *Update Note Modal* <br>
 ![Website Screenshot](https://i.imgur.com/f6gniHY.png) <br><br>
-*Marked Notes Page* <br>
+### *Marked Notes Page* <br>
 ![Website Screenshot](https://i.imgur.com/iSTrLnK.png) <br><br>
-*Read Note Page* <br>
+### *Read Note Page* <br>
 ![Website Screenshot](https://i.imgur.com/FEfHsEv.png) <br><br>
-*Profile Page* <br>
+### *Profile Page* <br>
 ![Website Screenshot](https://i.imgur.com/55XyANg.png) <br><br>
-*Update Profile Page* <br>
+### *Update Profile Page* <br>
 ![Website Screenshot](https://i.imgur.com/kkwCCVx.png) <br><br>
-*Search Functionality* <br>
+### *Search Functionality* <br>
 ![Website Screenshot](https://i.imgur.com/lAsTGJV.png) <br><br>
-*Loader Component* <br>
+### *Loader Component* <br>
 ![Website Screenshot](https://i.imgur.com/ye6lxg9.png) <br><br>
 
