@@ -51,8 +51,9 @@ export const login_control = async (req, res) => {
 
         res.cookie('jwt', jwtToken, {
             httpOnly: true,
-            secure: false,      // true in production
-            maxAge: 1000 * 60 * 60 * 24 * 7
+            secure: true,      // true in production
+            maxAge: 1000 * 60 * 60 * 24 * 7,
+            sameSite: 'None'
         }).status(200).json({message: "Login successful"})
 
     }catch (err) {
@@ -64,7 +65,7 @@ export const logout_control = async (req, res) => {
     try {
         res.clearCookie('jwt', {
             httpOnly: true,
-            secure: false,      // true in production
+            secure: true,      // true in production
         })
         res.status(200).json({message: "Logout Successful"})
     }catch (err) {
