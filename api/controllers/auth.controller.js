@@ -53,7 +53,6 @@ export const login_control = async (req, res) => {
             httpOnly: true,
             secure: false,      // true in production
             maxAge: 1000 * 60 * 60 * 24 * 7,
-            sameSite: 'None'
         }).status(200).json({message: "Login successful"})
 
     }catch (err) {
