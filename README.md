@@ -22,7 +22,7 @@ I used `JSON WEB TOKEN` and `COOKIES` for authentication and DID NOT save token 
 
 ## IMAGES
 
-*Auth Page* <br>
+### *Auth Page* <br>
 ![Website Screenshot](https://i.imgur.com/XauXycZ.png) <br><br>
 *Home Page* <br>
 ![Website Screenshot](https://i.imgur.com/9MD6lvJ.png) <br><br>
